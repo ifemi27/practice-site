@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#homepage{
+    background-image: url(homepage-hero.jpg);
+    background-repeat: no-repeat;
+    min-height: 65vh;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    left:0;
+    top: calc(100% + .25rem);
+    background-color: #012169;
+    color: white;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+}
+
+.dropdown > .link:focus + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#active{
+    padding-top: 80px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#buyers{
+    padding-top: 90px;
+    background-color: #F7F9FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 30px;
+    padding-bottom: 70px;
+}
+
+#security{
+    background-color: #003087;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px 60px
+}
+
+#started{
+    padding: 90px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F9FA;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
